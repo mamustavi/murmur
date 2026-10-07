@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Murmur for Mac</title>
+  <meta name="description" content="Murmur records your Mac's audio and your voice, transcribes it entirely on your Mac, and turns it into notes and summaries you'll actually read. Free for macOS 26.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Murmur for Mac">
+  <meta property="og:description" content="Every conversation, beautifully written down. Private, on-device transcription for macOS.">
+  <meta property="og:image" content="https://mamustavi.github.io/murmur/images/formatted-light.png">
+  <link rel="icon" type="image/png" href="images/favicon-64.png">
+  <link rel="apple-touch-icon" href="images/icon-512.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="globalnav" aria-label="Murmur">
+  <div class="globalnav-content">
+    <a class="globalnav-title" href="#top">
+      <img src="images/icon-512.png" alt="" width="22" height="22">
+      Murmur
+    </a>
+    <div class="globalnav-links">
+      <a href="#views">Overview</a>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a class="button button-small download-link" href="https://github.com/mamustavi/murmur/releases/latest">Download</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  <section class="hero">
+    <img class="hero-icon" src="images/icon-512.png" alt="Murmur app icon" width="128" height="128">
+    <p class="eyebrow">Murmur</p>
+    <h1>Every conversation,<br>beautifully written down.</h1>
+    <p class="lede">Murmur records your Mac’s audio and your voice, transcribes it entirely on your Mac, and turns it into notes you’ll actually want to read.</p>
+    <div class="cta">
+      <a class="button download-link" href="https://github.com/mamustavi/murmur/releases/latest">
+        <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+        Download for Mac
+      </a>
+      <p class="fineprint">Free · <span class="download-version">Latest version</span> · macOS 26 or later · Apple silicon</p>
+    </div>
+    <figure class="hero-shot">
+      <picture>
+        <source srcset="images/formatted-dark.png" media="(prefers-color-scheme: dark)">
+        <img src="images/formatted-light.png" alt="Murmur showing a formatted meeting transcript with headings, highlights and a bulleted list" width="2000" height="1310">
+      </picture>
+    </figure>
+  </section>
+
+  <section class="section views" id="views">
+    <h2>Three ways to read<br>every recording.</h2>
+    <p class="section-lede">Switch between the word-for-word transcript, a cleanly formatted version, and a summary, all from the same recording.</p>
+
+    <div class="segmented" role="tablist" aria-label="Transcript view">
+      <button role="tab" aria-selected="false" aria-controls="view-panel" data-view="raw">Raw</button>
+      <button role="tab" aria-selected="true" aria-controls="view-panel" data-view="formatted">Formatted</button>
+      <button role="tab" aria-selected="false" aria-controls="view-panel" data-view="summary">Summary</button>
+    </div>
+
+    <div class="view-panel" id="view-panel" role="tabpanel">
+      <p class="view-caption" data-for="raw" hidden>Every word, timestamped, with who said it: <strong>Me</strong> for your microphone, <strong>Others</strong> for everyone on the call. Click any line to hear it.</p>
+      <p class="view-caption" data-for="formatted">Headings, highlights and lists, added by Apple Intelligence without rewriting a single word you said.</p>
+      <p class="view-caption" data-for="summary" hidden>Key points, decisions and action items, ready to paste into an email or your notes.</p>
+      <figure class="screenshot">
+        <picture data-for="raw" hidden>
+          <source srcset="images/raw-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="images/raw-light.png" alt="Raw transcript with timestamps and Me and Others speaker labels" width="2000" height="1310" loading="lazy">
+        </picture>
+        <picture data-for="formatted">
+          <source srcset="images/formatted-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="images/formatted-light.png" alt="Formatted transcript with headings, highlights and a bulleted list" width="2000" height="1310" loading="lazy">
+        </picture>
+        <picture data-for="summary" hidden>
+          <source srcset="images/summary-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="images/summary-light.png" alt="Summary with key points, decisions and action items" width="2000" height="1310" loading="lazy">
+        </picture>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section features" id="features">
+    <h2>Everything you need.<br>Nothing you don’t.</h2>
+    <div class="tiles">
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h1m3-4v8m3-11v14m3-10v6m3-9v12m3-8v4m2-2h1"/></svg>
+        <h3>Records your Mac and your mic.</h3>
+        <p>Capture calls, meetings, videos and lectures playing on your Mac, plus your own voice, as separate tracks.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.6-.3 4.2 1.4 4.6 4.3"/></svg>
+        <h3>Knows who’s talking.</h3>
+        <p>Your words and everyone else’s are labeled automatically, and echo from your speakers is removed.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M18.5 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
+        <h3>Formatted and summarized.</h3>
+        <p>Apple Intelligence adds structure and writes a summary, on your Mac, without changing your words.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5.5 5.5"/></svg>
+        <h3>Search everything.</h3>
+        <p>Find any moment in any recording. Matches are highlighted, and the recording opens right where it was said.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3m0 0L8 7m4-4 4 4"/><path d="M7 10H5.5A1.5 1.5 0 0 0 4 11.5v8A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 18.5 10H17"/></svg>
+        <h3>Share it anywhere.</h3>
+        <p>Send a transcript to Mail, Notes or Messages, or export it as Markdown, plain text or subtitles.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h10.5a3.5 3.5 0 0 0 .4-7A5.5 5.5 0 0 0 7.4 9.6 4.2 4.2 0 0 0 7 18z"/></svg>
+        <h3>On all your Macs.</h3>
+        <p>Optional iCloud sync keeps your library on every Mac you use, with transcripts end-to-end encrypted.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M7 10h1m3 0h1m3 0h1m-9 4h8"/></svg>
+        <h3>Always a keystroke away.</h3>
+        <p>Start and stop recording from any app with a global shortcut or from the menu bar, even with the window closed.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7.5A1.5 1.5 0 0 0 6 4.5v15A1.5 1.5 0 0 0 7.5 21h9a1.5 1.5 0 0 0 1.5-1.5V7z"/><path d="M14 3v4h4M9.5 13.5l2 2 3.5-4"/></svg>
+        <h3>Bring your own files.</h3>
+        <p>Import audio or video recordings and Murmur transcribes them just like its own.</p>
+      </article>
+      <article class="tile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4h-4"/></svg>
+        <h3>Always up to date.</h3>
+        <p>New versions arrive automatically, signed and verified before they install.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section search">
+    <div class="split">
+      <div class="split-text">
+        <h2>Find anything<br>anyone said.</h2>
+        <p class="section-lede">Search across every transcript at once. Murmur shows each match in context and takes you straight to the moment it was said.</p>
+      </div>
+      <figure class="screenshot">
+        <picture>
+          <source srcset="images/search-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="images/search-light.png" alt="Searching for pricing, with matches highlighted in the sidebar" width="2000" height="1310" loading="lazy">
+        </picture>
+      </figure>
+    </div>
+  </section>
+
+  <section class="privacy" id="privacy">
+    <div class="privacy-content">
+      <svg class="privacy-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
+      <h2>Private by design.</h2>
+      <p class="section-lede">Your conversations are some of the most personal things you have. Murmur treats them that way.</p>
+      <div class="privacy-points">
+        <div>
+          <h3>Transcribed on your Mac.</h3>
+          <p>Speech recognition, formatting and summaries all run on your Mac. Recordings are never uploaded for processing.</p>
+        </div>
+        <div>
+          <h3>No account. No tracking.</h3>
+          <p>There’s nothing to sign up for, and Murmur collects no analytics. Its only connections are a one-time model download and update checks.</p>
+        </div>
+        <div>
+          <h3>Your iCloud, your choice.</h3>
+          <p>Sync is off unless you turn it on, and then it uses your own iCloud account, with transcripts end-to-end encrypted.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section download" id="download">
+    <img src="images/icon-512.png" alt="" width="96" height="96">
+    <h2>Get Murmur.</h2>
+    <p class="section-lede">Free. Signed and notarized by Apple.</p>
+    <div class="cta">
+      <a class="button download-link" href="https://github.com/mamustavi/murmur/releases/latest">
+        <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+        Download for Mac
+      </a>
+    </div>
+    <dl class="requirements">
+      <div><dt>System</dt><dd>macOS 26 or later</dd></div>
+      <div><dt>Mac</dt><dd>Apple silicon (M1 or later)</dd></div>
+      <div><dt>First launch</dt><dd>Downloads its transcription model, about 2&nbsp;GB</dd></div>
+      <div><dt>Formatting and summaries</dt><dd>Apple Intelligence turned on</dd></div>
+    </dl>
+    <p class="install-steps">Open the downloaded file and drag Murmur to Applications.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>Copyright © 2026 Adnan Mustavi.</p>
+    <p class="footer-links">
+      <a href="https://github.com/mamustavi/murmur/releases">Release Notes</a>
+      <a href="https://github.com/mamustavi/murmur">GitHub</a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
