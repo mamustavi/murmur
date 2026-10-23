@@ -9,7 +9,8 @@
   <meta property="og:title" content="Murmur for Mac">
   <meta property="og:description" content="Every conversation, beautifully written down. Private, on-device transcription for macOS.">
   <meta property="og:image" content="https://mamustavi.github.io/murmur/images/formatted-light.png">
-  <link rel="icon" type="image/png" href="images/favicon-64.png">
+  <link rel="icon" type="image/png" href="images/favicon-64.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="images/favicon-64-dark.png" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="images/icon-512.png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,7 +19,10 @@
 <nav class="globalnav" aria-label="Murmur">
   <div class="globalnav-content">
     <a class="globalnav-title" href="#top">
-      <img src="images/icon-512.png" alt="" width="22" height="22">
+      <picture>
+        <source srcset="images/icon-512-dark.png" media="(prefers-color-scheme: dark)">
+        <img class="app-icon" src="images/icon-512.png" alt="" width="22" height="22">
+      </picture>
       Murmur
     </a>
     <div class="globalnav-links">
@@ -33,7 +37,10 @@
 <main id="top">
 
   <section class="hero">
-    <img class="hero-icon" src="images/icon-512.png" alt="Murmur app icon" width="128" height="128">
+    <picture>
+      <source srcset="images/icon-512-dark.png" media="(prefers-color-scheme: dark)">
+      <img class="app-icon hero-icon" src="images/icon-512.png" alt="Murmur app icon" width="128" height="128">
+    </picture>
     <p class="eyebrow">Murmur</p>
     <h1>Every conversation,<br>beautifully written down.</h1>
     <p class="lede">Murmur records your Mac’s audio and your voice, transcribes it entirely on your Mac, and turns it into notes you’ll actually want to read.</p>
@@ -172,7 +179,10 @@
   </section>
 
   <section class="section download" id="download">
-    <img src="images/icon-512.png" alt="" width="96" height="96">
+    <picture>
+      <source srcset="images/icon-512-dark.png" media="(prefers-color-scheme: dark)">
+      <img class="app-icon" src="images/icon-512.png" alt="" width="96" height="96">
+    </picture>
     <h2>Get Murmur.</h2>
     <p class="section-lede">Free. Signed and notarized by Apple.</p>
     <div class="cta">

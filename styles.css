@@ -56,6 +56,13 @@ a:hover { text-decoration: underline; }
 
 img { max-width: 100%; height: auto; display: block; }
 
+/* The icon images are edge to edge; a soft shadow keeps their shape visible on a
+   page of the same colour, as on Apple's pages. */
+.app-icon { filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.14)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.08)); }
+@media (prefers-color-scheme: dark) {
+  .app-icon { filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.18)) drop-shadow(0 6px 18px rgba(0, 0, 0, 0.6)); }
+}
+
 h1, h2, h3 {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
@@ -82,6 +89,11 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.globalnav-title .app-icon { filter: drop-shadow(0 0.5px 1.5px rgba(0, 0, 0, 0.3)); }
+@media (prefers-color-scheme: dark) {
+  .globalnav-title .app-icon { filter: drop-shadow(0 0 0.5px rgba(255, 255, 255, 0.35)); }
 }
 
 .globalnav-title {
